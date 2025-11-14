@@ -1,0 +1,48 @@
+.terminal-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prompt {
+  color: var(--accent);
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(30, end);
+}
+
+.typing-complete {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.subtitle {
+  color: var(--comment);
+  margin-bottom: 1.5rem;
+}
+
+.inline-nav {
+  margin-bottom: 3rem;
+}
+
+.inline-nav a {
+  margin-right: 1.5rem;
+}
+

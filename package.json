@@ -1,0 +1,53 @@
+{
+  "name": "developer-portfolio",
+  "version": "1.0.0",
+  "description": "Minimal terminal-themed developer portfolio",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "terminal",
+    "minimal",
+    "react",
+    "vite"
+  ],
+  "author": "Philipp Trubchenko",
+  "license": "MIT",
+  "homepage": "https://github.com/philtru/philtrue.me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philtru/philtrue.me.git"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "vite": "^5.0.8"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

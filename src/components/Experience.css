@@ -1,0 +1,27 @@
+.experience-item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--code-bg);
+}
+
+.experience-header {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.experience-meta {
+  color: var(--comment);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement {
+  color: var(--text);
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.key-achievement {
+  color: var(--accent);
+}
+

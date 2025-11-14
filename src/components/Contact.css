@@ -1,0 +1,9 @@
+.contact-function {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.contact-function:hover {
+  text-decoration: underline;
+}
+

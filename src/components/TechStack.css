@@ -1,0 +1,16 @@
+.code-block {
+  background: var(--code-bg);
+  padding: 1.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.tech-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.tech-category {
+  color: var(--comment);
+}
+

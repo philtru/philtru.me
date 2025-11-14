@@ -1,0 +1,9 @@
+.about-text {
+  background: var(--code-bg);
+  padding: 1.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
