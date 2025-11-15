@@ -2,6 +2,14 @@ import './Projects.css'
 
 const projects = [
   {
+    title: 'Self-Hosted Infrastructure Automation',
+    description: 'Designed and deployed Proxmox-based virtualization platform with automated container orchestration via Portainer. Implemented infrastructure-as-code patterns using shell scripting for VM provisioning, Docker Compose stack management, and service lifecycle automation',
+    tech: 'Tech: Proxmox, Portainer, Docker Compose, Shell Scripting, LXC Containers, Reverse Proxy',
+    links: [
+      { label: '[architecture]', href: '#' }
+    ]
+  },
+  {
     title: 'GraphQL API Migration',
     description: 'Modernized legacy REST APIs to GraphQL, achieving 35% performance improvement',
     tech: 'Tech: GraphQL, Node.js, Redis, MongoDB',

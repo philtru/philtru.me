@@ -10,7 +10,7 @@ function TechStack() {
             <span className="tech-category">{'// Frontend:'}</span> JavaScript, TypeScript, React, React Hooks, Redux, Next.js, Apollo
           </div>
           <div>
-            <span className="tech-category">{'// Backend:'}</span> Node.js, Express, Python, GraphQL
+            <span className="tech-category">{'// Backend:'}</span> Node.js, Express, GoLang, GraphQL
           </div>
           <div>
             <span className="tech-category">{'// Database:'}</span> MongoDB, MySQL, Redis
@@ -19,10 +19,10 @@ function TechStack() {
             <span className="tech-category">{'// Testing:'}</span> Jest, Cypress
           </div>
           <div>
-            <span className="tech-category">{'// DevOps:'}</span> Docker, RabbitMQ, CI/CD, Git
+            <span className="tech-category">{'// DevOps:'}</span> Docker, Kubernetes, Proxmox, Self-hosting, RabbitMQ, CI/CD, Git
           </div>
           <div>
-            <span className="tech-category">{'// Tools:'}</span> Webpack, npm, Yarn, Splunk, Grafana
+            <span className="tech-category">{'// Tools:'}</span> Webpack, Splunk, Grafana, Vite, Ansible
           </div>
         </div>
       </div>
