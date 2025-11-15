@@ -1,0 +1,51 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: var(--code-bg);
+  border: 1px solid var(--comment);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  color: var(--text);
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 100;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.scroll-arrow {
+  font-size: 1rem;
+}
+
+.scroll-label {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 5.5rem;
+    right: 0.75rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  
+  .scroll-label {
+    display: none;
+  }
+  
+  .scroll-arrow {
+    font-size: 1.1rem;
+  }
+}
+

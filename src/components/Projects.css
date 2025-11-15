@@ -29,3 +29,33 @@
   font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+  .project {
+    padding: 0.75rem;
+  }
+  
+  .project-header {
+    font-size: 0.95rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .project-tech {
+    font-size: 0.85rem;
+  }
+  
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .project-links a {
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+}
+

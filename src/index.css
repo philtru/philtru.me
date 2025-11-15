@@ -1,9 +1,10 @@
 :root {
-  --bg: #0a0a0a;
-  --text: #e0e0e0;
-  --accent: #00ff00;
-  --comment: #888;
-  --code-bg: #1a1a1a;
+  /* Dracula theme (default) */
+  --bg: #282a36;
+  --text: #f8f8f2;
+  --accent: #bd93f9;
+  --comment: #6272a4;
+  --code-bg: #44475a;
 }
 
 * {
@@ -25,6 +26,13 @@ body {
   font-variant-ligatures: common-ligatures;
   -webkit-font-feature-settings: "liga" on, "calt" on;
   font-feature-settings: "liga" on, "calt" on;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 #root {

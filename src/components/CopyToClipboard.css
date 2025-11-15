@@ -1,0 +1,40 @@
+.copy-button {
+  background: transparent;
+  border: none;
+  color: var(--comment);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.3s ease;
+  vertical-align: middle;
+}
+
+.copy-button:hover {
+  color: var(--accent);
+}
+
+.copy-icon {
+  font-size: 0.9rem;
+}
+
+.copy-feedback {
+  color: var(--accent);
+  font-size: 0.8rem;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+

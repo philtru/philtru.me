@@ -5,6 +5,12 @@
   min-height: 100vh;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
 a {
   color: var(--text);
   text-decoration: none;
@@ -21,8 +27,21 @@ a:hover {
   font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+  .divider {
+    margin: 2rem 0;
+    font-size: 0.85rem;
+  }
+}
+
 section {
   margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 2rem;
+  }
 }
 
 h2 {
@@ -30,5 +49,34 @@ h2 {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1rem;
+  background: var(--code-bg);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .skip-to-content:focus {
+    left: 0.5rem;
+    top: 0.5rem;
+  }
 }
 

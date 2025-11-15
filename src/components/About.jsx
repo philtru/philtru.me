@@ -6,7 +6,7 @@ function About() {
       <h2>{'/* About */'}</h2>
       <pre className="about-text">{`const developer = {
   name: 'Philipp Trubchenko',
-  experience: 7, // years
+  experience: 8, // years
   expertise: ['Full-Stack Development', 'System Architecture', 'Team Leadership'],
   focus: ['React/Next.js Apps', 'GraphQL APIs', 'Performance Optimization'],
   currentRole: 'Building scalable web applications',

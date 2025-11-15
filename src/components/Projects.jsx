@@ -54,13 +54,15 @@ function Projects() {
           <div className="project-header">{project.title}</div>
           <div className="project-description">{project.description}</div>
           <div className="project-tech">{project.tech}</div>
-          <div className="project-links">
-            {project.links.map((link, linkIndex) => (
-              <a key={linkIndex} href={link.href}>
-                {link.label}
-              </a>
-            ))}
-          </div>
+          {project.links && project.links.length > 0 && project.links[0].href !== '#' && (
+            <div className="project-links">
+              {project.links.map((link, linkIndex) => (
+                <a key={linkIndex} href={link.href} target={link.href.startsWith('http') ? '_blank' : undefined} rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       ))}
     </section>

@@ -1,3 +1,9 @@
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .contact-function {
   color: var(--accent);
   cursor: pointer;
@@ -5,5 +11,28 @@
 
 .contact-function:hover {
   text-decoration: underline;
+}
+
+.copy-email-button {
+  background: transparent;
+  border: none;
+  color: var(--comment);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.copy-email-button:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .code-block {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
 }
 

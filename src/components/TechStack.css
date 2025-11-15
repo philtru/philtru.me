@@ -14,3 +14,15 @@
   color: var(--comment);
 }
 
+@media (max-width: 768px) {
+  .code-block {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .tech-grid {
+    gap: 0.4rem;
+    font-size: 0.85rem;
+  }
+}
+

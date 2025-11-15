@@ -1,0 +1,177 @@
+.theme-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .theme-switcher {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.75rem;
+    gap: 0.25rem;
+  }
+  
+  .theme-label {
+    display: none; /* Hide label on mobile to save space */
+  }
+  
+  .theme-select-wrapper {
+    min-width: 90px;
+  }
+  
+  .theme-select {
+    padding: 0.35rem 1.75rem 0.35rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .theme-select-arrow {
+    right: 0.5rem;
+    font-size: 0.65rem;
+  }
+}
+
+.theme-label {
+  color: var(--comment);
+  font-size: 0.9rem;
+}
+
+.theme-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.theme-select-button {
+  background: var(--code-bg);
+  color: var(--text);
+  border: 1px solid var(--comment);
+  border-radius: 4px;
+  padding: 0.4rem 2rem 0.4rem 0.6rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.theme-select-button:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.theme-select-button:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(189, 147, 249, 0.2);
+}
+
+.theme-select-button:active {
+  transform: translateY(1px);
+}
+
+.theme-select-arrow {
+  color: var(--comment);
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.theme-select-arrow.open {
+  transform: rotate(180deg);
+}
+
+.theme-select-button:hover .theme-select-arrow {
+  color: var(--accent);
+}
+
+.theme-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  right: 0;
+  background: var(--code-bg);
+  border: 1px solid var(--comment);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1001;
+  overflow: hidden;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.theme-dropdown-item {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 0.6rem 0.75rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.theme-dropdown-item:hover {
+  background: var(--bg);
+}
+
+.theme-dropdown-item.selected {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.theme-checkmark {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+}
+
+.theme-checkmark svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}
+
+@media (max-width: 768px) {
+  .theme-select-button {
+    padding: 0.35rem 1.75rem 0.35rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .theme-select-arrow {
+    font-size: 0.65rem;
+  }
+  
+  .theme-dropdown-item {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+

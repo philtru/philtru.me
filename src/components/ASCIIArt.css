@@ -1,0 +1,24 @@
+.ascii-art {
+  color: var(--accent);
+  font-size: 0.5rem;
+  line-height: 1.2;
+  margin: 1rem 0 2rem 0;
+  overflow-x: auto;
+  white-space: pre;
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .ascii-art {
+    font-size: 0.35rem;
+    display: none; /* Hide on mobile for cleaner look */
+  }
+}
+
+@media (min-width: 1200px) {
+  .ascii-art {
+    font-size: 0.6rem;
+  }
+}
+

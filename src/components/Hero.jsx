@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+// import ASCIIArt from './ASCIIArt'
 import './Hero.css'
 
 function Hero() {
@@ -13,21 +14,22 @@ function Hero() {
 
   return (
     <header id="hero">
+      <a href="#about" className="skip-to-content" aria-label="Skip to main content">Skip to content</a>
+      {/* <ASCIIArt /> */}
       <h1 className="terminal-text">
-        <span className="prompt">{'>'} </span>
+        <span className="prompt" aria-hidden="true">{'>'} </span>
         <span className={typingComplete ? 'typing-complete' : 'typing'}>
           Hello, I&apos;m Philipp Trubchenko
         </span>
-        <span className="cursor">_</span>
+        <span className="cursor" aria-hidden="true">_</span>
       </h1>
       <p className="subtitle">Full Stack Developer • San Francisco, CA</p>
-      <nav className="inline-nav">
-        <a href="#about">[about]</a>
-        <a href="#experience">[experience]</a>
-        <a href="#stack">[stack]</a>
-        <a href="#projects">[projects]</a>
-        <a href="#contact">[contact]</a>
-        <a href="https://drive.google.com/file/d/your-resume-id" target="_blank" rel="noopener noreferrer">[resume.pdf]</a>
+      <nav className="inline-nav" aria-label="Main navigation">
+        <a href="#about" aria-label="About section">[about]</a>
+        <a href="#experience" aria-label="Experience section">[experience]</a>
+        <a href="#stack" aria-label="Tech stack section">[stack]</a>
+        <a href="#projects" aria-label="Projects section">[projects]</a>
+        <a href="#contact" aria-label="Contact section">[contact]</a>
       </nav>
     </header>
   )
