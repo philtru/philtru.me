@@ -2,6 +2,18 @@ import './Experience.css'
 
 const experiences = [
   {
+    company: 'Shadeform (YC S23)',
+    role: 'Full Stack Engineer',
+    period: 'Aug 2024 - Present',
+    location: 'San Francisco, CA',
+    achievements: [
+      { text: '-> Build the GPU cloud marketplace console: on-demand instances across ', highlight: '30+ cloud providers' },
+      '-> Ship product surfaces end to end — React/TypeScript front end, Go services, public REST API',
+      '-> Own the launch flow: instance search, provisioning, lifecycle and billing views',
+      '-> Early engineer on an 11-person team; scope spans frontend, backend and cloud infra'
+    ]
+  },
+  {
     company: 'Tesla',
     role: 'Software Developer',
     period: 'July 2023 - May 2024',
