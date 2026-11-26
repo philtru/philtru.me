@@ -1,6 +1,7 @@
 {
   "name": "developer-portfolio",
   "version": "1.0.0",
+  "packageManager": "pnpm@9.15.9",
   "description": "Minimal terminal-themed developer portfolio",
   "type": "module",
   "scripts": {
